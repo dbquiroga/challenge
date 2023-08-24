@@ -32,7 +32,7 @@ npm test
 
 2. Report in Cypress Cloud
    <br>
-   2.1 Run test
+   2.1 Run test for reports
 
 ```
 npm run cy:report
@@ -40,6 +40,8 @@ npm run cy:report
 
 <br>
 2.2 Go to the [Dashboard in cypress](https://cloud.cypress.io/projects/frqpqd/)
+
+You can see the screenshoot here![Preview Dashboard cypress](image-1.png)
 
 ## Continuous Integration (CI)
 
