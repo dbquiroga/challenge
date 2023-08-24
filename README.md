@@ -11,7 +11,6 @@ This repository contains an automated web testing project that interacts with sa
 To get started with this project, you'll need to have the following prerequisites installed on your machine:
 
 1. Node JS: I recommend using version 16.14.2 or newer.
-2. Json-formatter for Native Reporter option(depends on your OS: https://github.com/cucumber/json-formatter)
 
 ## Getting Started
 
@@ -31,24 +30,16 @@ You can run the automated tests by using the following command:
 npm test
 ```
 
-2. Native report
-
-- Install [cucumber-formatter](https://github.com/cucumber/json-formatter)
-- Run test
-- Put in console: `node cucumber-html-report.js`
-- Open the html-report.html
-
-Results you should see
-![Alt text]()
-
-3. Report in Cypress Cloud
-   3.1 Run test
+2. Report in Cypress Cloud
+   <br>
+   2.1 Run test
 
 ```
 npm run cy:report
 ```
 
-3.2 Go to the [Dashboard in cypress](https://cloud.cypress.io/projects/frqpqd/)
+<br>
+2.2 Go to the [Dashboard in cypress](https://cloud.cypress.io/projects/frqpqd/)
 
 ## Continuous Integration (CI)
 

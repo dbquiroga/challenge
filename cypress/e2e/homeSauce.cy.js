@@ -2,7 +2,7 @@ import { homeSaucePag } from "../support/pages/homeSaucePage";
 import { inventoryPag } from "../support/pages/inventoryPage";
 import tests from "../fixtures/sauceUsers.json";
 
-describe("Challenge | Automation", () => {
+describe("Challenge | Functionality Login", () => {
   beforeEach(() => {
     cy.visit("");
   });

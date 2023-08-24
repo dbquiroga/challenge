@@ -25,8 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 Cypress.Commands.add("login", () => {
   const { correctUser, correctPass } = Cypress.env("user");
-  const { inventory } = Cypress.env("endpoint");
-  cy.visit('');
+  cy.visit("");
   cy.get('[name = "user-name"]').type(correctUser);
   cy.get('[name= "password"]').type(correctPass);
   cy.get('[type= "submit"]').click();
