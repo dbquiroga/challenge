@@ -1,0 +1,9 @@
+node_modules
+.pytest_cache
+videos
+downloads
+screenshots
+mochawesome-report
+reports
+mochawesome.json
+
