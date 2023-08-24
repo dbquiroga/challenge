@@ -1,6 +1,6 @@
 # challenge
-Challenge con demo saucedemo, utilizando cypress y javascript. 
 
+Challenge con demo saucedemo, utilizando cypress y javascript.
 
 # Automated Testing with Cypress and JavaScript
 
@@ -42,11 +42,13 @@ Results you should see
 ![Alt text]()
 
 3. Report in Cypress Cloud
- 3.1 Run test
- ```
- npm run cy:report 
- ```
- 3.2 Go to the [Dashboard in cypress](https://cloud.cypress.io/projects/frqpqd/)
+   3.1 Run test
+
+```
+npm run cy:report
+```
+
+3.2 Go to the [Dashboard in cypress](https://cloud.cypress.io/projects/frqpqd/)
 
 ## Contact
 
