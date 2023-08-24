@@ -7,7 +7,7 @@
     "test": "cypress open",
     "cy:run:chrome": "cypress run --browser chrome",
     "cy:run:firefox": "cypress run --browser firefox",
-    "cy:report": "npx cypress run --record --key da7a50e5-58a6-4e0b-a009-804a34ceb110"
+    "cy:report": "cypress run --record --key da7a50e5-58a6-4e0b-a009-804a34ceb110"
   },
   "keywords": [
     "dbquiroga"
@@ -15,7 +15,6 @@
   "author": "Day Quiroga",
   "license": "ISC",
   "devDependencies": {
-    	"@4tw/cypress-drag-drop": "2.2.2",
 		"@badeball/cypress-cucumber-preprocessor": "12.2.0",
 		"@bahmutov/cypress-esbuild-preprocessor": "2.1.5",
 		"@esbuild-plugins/node-modules-polyfill": "0.1.4",

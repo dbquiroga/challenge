@@ -8,6 +8,10 @@ module.exports = defineConfig({
     },
     baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
+    screenshotOnRunFailure: true,
+    watchForFileChanges: false,
+    video: false,
+
     env: {
       user: {
         correctUser: "standard_user",
