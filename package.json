@@ -4,7 +4,10 @@
   "description": "Challenge con demo saucedemo, utilizando cypress y javascript.",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:report": "npx cypress run --record --key da7a50e5-58a6-4e0b-a009-804a34ceb110"
   },
   "keywords": [
     "dbquiroga"
