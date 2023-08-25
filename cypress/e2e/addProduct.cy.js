@@ -11,45 +11,41 @@ describe("Challenge | Functionality add a product to the shopping cart", () => {
   it("TC7: User adds a product from the Product List Page to the Shopping-Cart successfully", () => {
     inventoryPag.addProducToCart(products.name);
 
-    inventoryPag.get.removeButtonCard().should("contain", "Remove");
-    inventoryPag.get
-      .shoppingCardBadge()
+    inventoryPag.get("removeButtonCard").should("contain", "Remove");
+    inventoryPag
+      .get("shoppingCardBadge")
       .should("exist")
       .should("have.text", "1")
       .click();
     cy.url().should("include", "cart");
 
-    inventoryPag.get.inventoryItemName().should("contain", products.name);
-    inventoryPag.get
-      .inventoryItemDesc()
-      .should(
-        "contain",
-        "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
-      );
-    inventoryPag.get.inventoryItemPrice().should("contain", "29.99");
+    inventoryPag.get("inventoryItemName").should("contain", products.name);
+    inventoryPag
+      .get("inventoryItemDesc")
+      .should("contain", products.itemDescription);
+    inventoryPag
+      .get("inventoryItemPrice")
+      .should("contain", products.itemPrice);
   });
 
-  it.only("TC8: User adds a product from the Product Detail Page to the Shopping-Cart successfully", () => {
+  it("TC8: User adds a product from the Product Detail Page to the Shopping-Cart successfully", () => {
     inventoryPag.seeProduct(products.name);
     cy.url().should("include", "item");
 
-    inventoryPag.get.addButtonCard().click();
-    inventoryPag.get.removeButtonCard().should("contain", "Remove");
-    inventoryPag.get
-      .shoppingCardBadge()
+    inventoryPag.get("addButtonCard").click();
+    inventoryPag.get("removeButtonCard").should("contain", "Remove");
+    inventoryPag
+      .get("shoppingCardBadge")
       .should("exist")
       .should("have.text", "1")
       .click();
 
-    inventoryPag.get.inventoryItemName().should("contain", products.name);
-    cy.log(products.itemDescription);
-
-    inventoryPag.get
-      .inventoryItemDesc()
-      .should(
-        "contain",
-        "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
-      );
-    inventoryPag.get.inventoryItemPrice().should("contain", "29.99");
+    inventoryPag.get("inventoryItemName").should("contain", products.name);
+    inventoryPag
+      .get("inventoryItemDesc")
+      .should("contain", products.itemDescription);
+    inventoryPag
+      .get("inventoryItemPrice")
+      .should("contain", products.itemPrice);
   });
 });

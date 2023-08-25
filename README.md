@@ -1,6 +1,6 @@
 # challenge
 
-Challenge con demo saucedemo, utilizando cypress y javascript.
+Challenge with demo saucedemo, using cypress and javascript.
 
 # Automated Testing with Cypress and JavaScript
 
@@ -30,6 +30,12 @@ You can run the automated tests by using the following command:
 npm test
 ```
 
+1.1 Run in firefox
+
+```
+npm cy:run:firefox
+```
+
 2. Report in Cypress Cloud
    <br>
    2.1 Run test for reports
@@ -41,7 +47,9 @@ npm run cy:report
 <br>
 2.2 Go to the [Dashboard in cypress](https://cloud.cypress.io/projects/frqpqd/)
 
-You can see the screenshoot here![Preview Dashboard cypress](image-1.png)
+<br>
+
+\*You should be able to see the screenshots like this:![Preview Dashboard cypress](image-1.png)
 
 ## Continuous Integration (CI)
 

@@ -21,7 +21,7 @@ describe("Challenge | Functionality Login", () => {
       homeSaucePag.clickLogin();
 
       if (test.name === "TC1:login into to inventory page") {
-        inventoryPag.get.titleSpan().should("have.text", test.expected);
+        inventoryPag.get("titleSpan").should("have.text", test.expected);
       } else {
         homeSaucePag.get.errorMessage().should("have.text", test.expected);
       }
